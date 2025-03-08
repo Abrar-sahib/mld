@@ -38,7 +38,7 @@ const Contact = () => {
           form.current.reset();
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log("FAILED...", error);
           alert("Failed to send message.");
         }
       )
@@ -65,7 +65,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                 <div>
                   <input
-                    name="first_name"
+                    name="from_name"
                     className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                     type="text"
                     placeholder="First Name*"
@@ -83,7 +83,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <input
-                    name="email"
+                    name="from_email"
                     className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                     type="email"
                     placeholder="Email*"
@@ -92,7 +92,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <input
-                    name="phone_number"
+                    name="from_number"
                     className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                     type="tel"
                     placeholder="Phone*"

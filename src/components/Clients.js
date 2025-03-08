@@ -4,42 +4,43 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
+import client1 from "../images/clients/client1.jpeg"
+import client2 from "../images/clients/client2.jpeg"
+import client3 from "../images/clients/client3.jpeg"
+import client4 from "../images/clients/client4.jpeg"
+import client5 from "../images/clients/client5.jpeg"
+
 const reviews = [
   {
-    name: "John D.",
-    image: "https://via.placeholder.com/100",
-    text: "Great dispatch service! They find me solid loads, handle the paperwork, and keep me moving. No forced dispatch, just smooth operations. Highly recommend!",
-  },
-  {
     name: "Sarah L.",
-    image: "https://via.placeholder.com/100",
+    image: client1,
     text: "I’ve worked with a few dispatch companies, but Pace Link Dispatch stands out. They communicate well, negotiate good rates, and always keep my best interests in mind.",
   },
   {
     name: "Michael T.",
-    image: "https://via.placeholder.com/100",
+    image: client3,
     text: "I was skeptical about using a dispatch service, but this team has made a big difference. They find loads that actually make sense for me, keep my downtime low, and handle all the paperwork. Couldn’t ask for better support.",
   },
   {
     name: "Emily R.",
-    image: "https://via.placeholder.com/100",
+    image: client4,
     text: "Excellent service! I get good rates, clear communication, and zero hassle. They know what they’re doing, and it shows in the way they operate.",
   },
   {
     name: "Daniel M.",
-    image: "https://via.placeholder.com/100",
+    image: client5,
     text: "Great experience so far! They understand my needs as a driver, and I’ve never felt pressured to take a load I didn’t want. Dispatching done right!",
   },
   {
-    name: "Sophia K.",
-    image: "https://via.placeholder.com/100",
-    text: "I’ve been with Pace Link Dispatch for months now, and they’ve never let me down. Consistent loads, fair rates, and great communication.",
+    name: "John D.",
+    image: client2,
+    text: "Great dispatch service! They find me solid loads, handle the paperwork, and keep me moving. No forced dispatch, just smooth operations. Highly recommend!",
   },
 ];
 
 const Clients = () => {
   return (
-    <div className="mt-8 bg-gray-100">
+    <div className="mt-8 bg-gray-100" id="clients">
       <section data-aos="fade-up">
         <div className="my-4 py-4">
           <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">
@@ -53,7 +54,7 @@ const Clients = () => {
           </h2>
         </div>
 
-        <div className="p-16" data-aos="fade-in" data-aos-delay="600">
+        <div className="p-16 pt-3" data-aos="fade-in" data-aos-delay="600">
           <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
             {reviews.map((review, index) => (
               <SwiperSlide key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
