@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://mld.ng/",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -17,6 +18,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
     "react-transition-group": "^4.4.2",
+    "swiper": "^11.2.5",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
